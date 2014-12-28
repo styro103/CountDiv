@@ -8,7 +8,7 @@ class DivCounter
 	public int getCount(int A, int B, int K)
 	{
 		//Edge Cases
-        if (A==B) //If No Range, Only One Number
+        if (A==B && K!=1) //If No Range, Only One Number
         {
 			if (A%K==0) //If Number is Divisible by K 
 				return 1; //return 1
